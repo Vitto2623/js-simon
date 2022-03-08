@@ -30,15 +30,19 @@ function miaFunzione() {
         arrayIns.push(inserisciNumero);
     }
 
+let ok = 0;
+let ko = 0;
+
     // qui devo fare il controllo
     for (let i = 0; i < arrayIns.length; i++) {
         const element = arrayIns[i];
         if (arrayRandomN.includes(element)){
-            document.getElementById('testo').innerHTML = `I numeri che hai inserito sono ${arrayIns} , i numeri corretti sono ${arrayRandomN}`;
-        } else if (!arrayRandomN.includes(element)) {
-            document.getElementById('testo').innerHTML = `I numeri che hai inserito sono tutti errati , i numeri corretti sono ${arrayRandomN}`;
+            ok++
+        } else {
+            ko++
         }
     }
+    document.getElementById('testo').innerHTML = `Hai indovinato ${ok} numero/i, non hai indovinato ${ko} numeri/o`;
 
 }
 
