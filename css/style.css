@@ -1,0 +1,16 @@
+#genera{
+    text-align: center;
+    list-style: none;
+    margin-top: 300px;
+    font-size: 1.8em;
+}
+
+.display-none{
+    display: none;
+}
+
+p{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+}
